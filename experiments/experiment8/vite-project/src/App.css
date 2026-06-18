@@ -1,0 +1,44 @@
+
+body {
+  font-family: Arial;
+  background-color: #f2f2f2;
+}
+
+.container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons button:nth-child(1) {
+  background-color: green;
+  color: white;
+}
+
+.buttons button:nth-child(2) {
+  background-color: red;
+  color: white;
+}
+
+.buttons button:nth-child(3) {
+  background-color: gray;
+  color: white;
+}
+

@@ -1,0 +1,31 @@
+
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+           
+        }
+
+        .first {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(248, 160, 160);
+            border-radius: 10px;
+          
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+       
+
+        h2 {
+            color: #333;
+        }
+
+       

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //simple function are synchrouns
+        //IIFE--Call immediatly after defining .Cannot be called for event
+        (function(a,b){  
+            console.log(`Addition of the numbers is ${a+b}`);
+        })(4,5);
+        //short code using arrow function
+        (msg=>console.log("Hello IIFI"))()
+
+        //Promises-->Asynchrounus 
+
+        let promise=new Promise(function(resolve,reject){
+            let age=25;
+            if(age>=18){
+                resolve("valid age");
+            }
+            else{
+                reject("waite for next year")
+            }
+        });
+        promise.then(msg=>console.log(msg)).catch(error=>console.log(error));
+
+
+        //ASYNC ,AWAIT
+        //https://dummyjson.com/docs/products
+
+        //fetch api using async await
+        // async function userData(){
+        //     let response=await fetch('https://dummyjson.com/products');
+        //     let responseData=await response.json();
+        //     console.log(responseData);
+        //     document.writeln
+        // }
+        // userData();
+
+        async function userData(){
+        try{
+            let response=await fetch('https://dummyjson.com/products');
+            let responseData=await response.json();
+            console.log(responseData);}
+        catch(error){
+            console.log(error);
+        }
+    }
+    userData();
+
+
+    //session storage-data got delete after some time
+    //local storage-does not delete the data till the logout
+
+    let myInfo={
+        name:"Priyanshu",
+        mobile:849340934,
+        email:"jfiejf@gmail.com",
+        age:19,
+    }
+
+    //convert the object into JSON stringify
+    let myInfoData=JSON.stringify(myInfo);
+    //set data
+    localStorage.setItem('prefrence',myInfoData);
+
+    //retreiving and parsing the object back
+    let setMyInfoloData=localStorage.getItem('prefrence')
+
+    //parse the object
+    const finalData=JSON.parse(setMyInfoloData);
+    console.log(finalData);
+
+
+
+    //Higher order function:-
+    //map(),filter(),reduce(),forEach()
+
+    let num=[8974,23,1,2,12,1,2,13];
+    //find the square of num
+    let sq=num.map(n=>n*n);
+    console.log(`Square of no is ${sq}`);
+
+    //filter greater 12
+    let st=num.filter(n=>n>12);
+    console.log(st);
+    //find sum of num array
+    let sum=num.reduce((total,n)=>total+n);
+    console.log(sum);
+    
+    //find multiply of 2 of each elements of num array
+    let double =num.forEach(n=>console.log(n*2));
+    // console.log(double);
+    </script>
+</body>
+</html>

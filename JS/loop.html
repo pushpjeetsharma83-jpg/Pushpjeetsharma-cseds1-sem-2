@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+
+</body>
+<script>
+    //for loop->Best if know how many time we have to iterate loop.
+    let language=[1,"html","css","c++","js","react","python"];
+    for(let i=0;i<language.length;i++){
+        console.log(language[i]);
+    }
+
+    //while ->when no of iteration is uncertain
+    let n=language.length;
+    let x=0;
+    while(x<n){
+        console.log(language[x]);
+        // document.write(language[x]);
+        x++;
+    }
+
+    //for ..of loop
+    for(let y of language){
+        console.log(y);
+    }
+
+    let Priyanshu={
+        age:19,
+        course:"btech",
+        college:"abesec",
+        ismarried:false,
+        address:"Kalkaji,Delhi",
+        
+
+    }
+    //for in loop
+    for(let x in Priyanshu){
+        console.log(Priyanshu[x]);
+    }
+    
+</script>
+</html>

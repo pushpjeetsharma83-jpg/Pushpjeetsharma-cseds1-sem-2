@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_VARIABLE</title>
+</head>
+<body>
+    <H1>JAVA Script Variable</H1>
+
+    <script>
+        //VAR DEFINATION?
+        //var are container for storing data in var
+
+        var myName="Priyanshu";
+        document.write(myName);
+        console.log(myName);
+
+        //JS EXECUTION AND SCOPE(Global and local)
+
+        function demo(){
+            var msg="Thanks";    //var participate in hosting phase
+            console.log(msg);
+        }
+        demo();
+
+        //var declaration using let and const
+        let msg2="Thanks again";
+        console.log(msg2);
+
+        const msg3="Thanks to visit my page";
+        console.log(msg3);
+        //let and const not found in local and global they are find int the script,not participate in hosting phase
+    </script>
+</body>
+</html>

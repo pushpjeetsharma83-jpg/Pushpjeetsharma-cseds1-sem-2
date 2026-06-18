@@ -1,0 +1,1 @@
+//Instead of using setInterval(), use setTimeout() within a function to create a recurring timeout that logs a message to the console every 2 seconds.0

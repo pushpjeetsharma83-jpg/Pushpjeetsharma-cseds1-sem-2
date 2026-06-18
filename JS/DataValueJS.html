@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        //Data value types are of two type:-
+        //Primitive:Single value(immutable)
+            //String,Number,Boolean,null,Undefined,Symbol,BigInt
+        //reference type/object type/non premitive(mutable)
+            //object,array,function
+    //Premitive datatypes
+        let name="Pankaj";     //string
+        console.log(name);
+        console.log(typeof(name));
+        let age=43;   //number
+        let Ismarried=false;    //boolean
+        let address=null;       //object
+        let city;               //undefined
+        let salary=BigInt(236856595579456925); //bigint
+        let val1=Symbol("Vikram");
+        let val2=Symbol("Vikram");
+        console.log(val1==val2);
+        console.log(typeof(salary));
+    //Non premitive datatypes
+        //object{}-object is a collection of keys and value
+        let student={
+            name:"Vikram",
+            age:32,
+            isMarried:false,
+            address:{
+                house:"G-73",
+                area:"kalkaji",
+                pincode:110019,
+                city:"New delhi",
+            },
+            course:"B tech",
+            branch:"cse ds",
+            year:2025,
+            getInfo:function(){
+                return `My education is ${student.course} branch ${student.branch} and year is ${student.year}`;
+            },
+        };
+        console.log(typeof(student));   //object
+        console.log(student);
+        console.log(student.address.house);    //accessing keys of the object using "." notation
+        console.log(student.name);
+        console.log(student.age);
+        console.log(student.isMarried);
+        console.log(student.getInfo());
+
+        //find objects property in object
+        console.log('name' in student);
+
+        //deleting object's property
+        console.log(delete student.name);
+        console.log('name' in student);
+    </script>
+    
+</body>
+</html>

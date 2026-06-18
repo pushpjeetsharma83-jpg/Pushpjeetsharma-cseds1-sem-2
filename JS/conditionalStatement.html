@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let age=prompt("Enter your age");
+    // if(age>=18){
+    //     console.log("Valid age for voting")
+    // }
+    // else{
+    //     console.log("Invalid age for voting");
+    // }
+
+    //switch case
+    // let grade=prompt("Enter the grade");
+    // switch(grade){
+    //         case 'A':result="First division";
+    //         break
+    //         case 'B':result="Second division";
+    //         break;
+    //         case 'C':result="third division";
+    //         break;
+    //         default:result="Fail";
+    // }
+    // console.log(result);
+
+    //if else if else--------
+
+    // let marks=prompt("Enter the Percentage");
+    // if(marks>=60){
+    //     console.log("First division");
+    // }
+    // else if(marks>=40 && marks<60){
+    //     console.log("Second Division");
+    // }
+    // else if(marks>=30 && marks<40){
+    //     console.log("Third devision")
+    // }
+    // else{
+    //     console.log("Favg
+    // }
+    let marks=[80,70,89,76,78,92];
+    let s=0;
+    for( let x of marks){
+        s=s+x;
+    }
+    console.log(s);
+    let avg=s/(marks.length);
+    if(avg>=60){
+        console.log("First division");
+    }
+    else if(avg>=40 && avg<60){
+        console.log("Second Division");
+    }
+    else if(avg>=30 && avg<40){
+        console.log("Third devision")
+    }
+    else{
+        console.log("Fail")
+    }
+
+</script>
+</html>
